@@ -13,6 +13,7 @@ for number in list:
     if sum_odds(number) % 7 == 0:
         sum += number
 
+
 print(sum)
 
 for number in list:
