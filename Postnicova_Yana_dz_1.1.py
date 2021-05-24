@@ -1,24 +1,17 @@
-#i - счетчик
-list = [i ** 3 for i in range(1, 1000, 2)]
+user_sec = int(input("Введите количество секунд"))
 
-def sum_odds(odd_number):
-    sum = 0
-    while (odd_number > 0):
-        sum += odd_number % 10
-        odd_number //= 10
-    return sum
+seconds = user_sec % 60
+minutes = user_sec // 60
+minute = minutes % 60
+hours = minutes // 60
+hour = hours % 24
+days = hours // 24
+day = days % 30
+months = days // 30
+month = months % 12
+years = months // 12
+year = years % 100
+centuries = years // 100
 
-sum = 0
-for number in list:
-    if sum_odds(number) % 7 == 0:
-        sum += number
+print((f'{centuries}' + " век. " if centuries else "") + (f'{year}' + " год. " if year else "") + (f'{month}' + " мес. " if month else "") + (f'{day}' + " дн. " if day else "") + (f'{hour}' + " час. " if hour else "") + (f'{minute}' + " мин. " if minute else "") + (f'{seconds}' + " сек. " if seconds else ""))
 
-
-print(sum)
-
-for number in list:
-    number += 17
-    if sum_odds(number) % 7 == 0:
-        sum += number
-
-print(sum)
