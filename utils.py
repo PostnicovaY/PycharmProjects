@@ -19,7 +19,7 @@ def currency_rates(currencies):
         print(f"Курс {currencies} - {conversion[currencies]} руб. {said_date}")
     else:
         return None
-
-import sys
-for param in sys.argv:
-    currency_rates(param)
+#Не деат сделать Pull request с данной командой
+#import sys
+#for param in sys.argv:
+#    currency_rates(param)
