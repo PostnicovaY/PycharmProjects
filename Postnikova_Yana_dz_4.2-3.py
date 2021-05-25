@@ -1,3 +1,4 @@
+#тут я решила разделить все действия, для наглядной их последовательности
 import requests
 import re
 site_data = requests.get('http://www.cbr.ru/scripts/XML_daily.asp')
